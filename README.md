@@ -12,3 +12,11 @@ For help using Markdown, check out this [Markdown Guide](https://www.markdowngui
 - Users
 - Orders
 - OrderItems
+
+## Helpful Links
+
+---
+
+- [Javascript Naming Conventions: Best Practices](https://medium.com/javascript-in-plain-english/javascript-naming-convention-best-practices-b2065694b7d)
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax).
+- [Example MVC Project](https://www.taniarascia.com/javascript-mvc-todo-app/)
