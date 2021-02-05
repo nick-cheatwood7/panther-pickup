@@ -1,40 +1,40 @@
 # Panther Pickup
 
-# Backend Model
+## Backend Model
 
 The backend model should follow the MVC (Model View Controller) design philosophy.
 
-## Meals
+### Meals
 
 - id
 - name
 - pricePerUnit
 - entreeIds
 
-## Entrees
+### Entrees
 
 - id
 - name
 - pricePerUnit
 
-## Drinks
+### Drinks
 
 - id
 - name
 
-## Carts
+### Carts
 
 - id
 - userId
 - countItems
 - totalCost
 
-## Cart Items
+### Cart Items
 
 - id
 - itemId
 
-## Orders
+### Orders
 
 - id
 - userId
@@ -43,19 +43,19 @@ The backend model should follow the MVC (Model View Controller) design philosoph
 - status
 - isComplete
 
-## Order Items
+### Order Items
 
 - id
 - orderId
 - itemId
 
-## Payments
+### Payments
 
 - id
 - cardNumber
 - paymentAmount
 
-## Transactions
+### Transactions
 
 - id
 - metadata
