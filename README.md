@@ -1,73 +1,70 @@
-# Panther Pickup
+# Getting Started with Create React App
 
-Outline the project here. We need to define classes and class methods here.
-The REAMDE file should outline the project and each class as thoroughly as possible, for easier support down the road.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-For help using Markdown, check out this [Markdown Guide](https://www.markdownguide.org/basic-syntax).
+## Available Scripts
 
-## Models
+In the project directory, you can run:
 
-### MenuItems
+### `yarn start`
 
-_MenuItems are individual food items available for ordering._
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- id
-- menuId
-- itemName
-- itemDescription
-- itemCost
-- image
-- nutritionalInformation
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Users
+### `yarn test`
 
-_Users have different types, which define privilege sets and who has access to what modules._
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- id
-- firstName
-- lastName
-- email
-- phone
-- password
-- userType
-- studentNumber
+### `yarn build`
 
-### Orders
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-_Orders can have many order items and are linked to a single user._
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- id
-- userId
-- orderNumber
-- timeCreated
-- scheduledTime
-- status
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### OrderItems
+### `yarn eject`
 
-_An order can have multiple menu items, which are called order items._
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- id
-- orderId
-- menuItemId
-- quantity
-- price
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Menus
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-_Each cafeteria can have many menus (perhaps a menu for each weekday or semester)._
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- id
-- name
-- description
-- isActive
+## Learn More
 
-## Views
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Controllers
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Helpful Links
+### Code Splitting
 
-- [Javascript Naming Conventions: Best Practices](https://medium.com/javascript-in-plain-english/javascript-naming-convention-best-practices-b2065694b7d)
-- [Markdown Guide](https://www.markdownguide.org/basic-syntax).
-- [Example MVC Project](https://www.taniarascia.com/javascript-mvc-todo-app/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
