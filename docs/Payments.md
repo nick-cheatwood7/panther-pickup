@@ -1,0 +1,5 @@
+# Payments
+
+- id
+- cardNumber
+- paymentAmount
