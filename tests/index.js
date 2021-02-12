@@ -1,4 +1,4 @@
-import entreeModelTests from "../tests/models/entreeModelTest"
+import entreeModelTests from './models/entreeModelTests.js'
 
 async function runTestsAndReturnFailures(tests) {
   const testTotalCount = tests.length
