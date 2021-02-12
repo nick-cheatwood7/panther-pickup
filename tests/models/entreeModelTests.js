@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import Entree from '../../src/Models/Entree.js'
 
 const getEntreeProperties = () => {
@@ -51,9 +52,7 @@ const setEntreeProperties = () => {
   else return false
 }
 
-const entreeModelTests = [
+export default [
   { name: 'Model | Get Entree Properties', test: getEntreeProperties },
   { name: 'Model | Set Entree Properties', test: setEntreeProperties },
 ]
-
-export default entreeModelTests
