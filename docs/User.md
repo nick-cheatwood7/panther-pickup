@@ -1,5 +1,5 @@
 # User
-No passwords are stiored here, only tokens.
+No passwords are stored here, only tokens.
 
 ## Properties
 - id
