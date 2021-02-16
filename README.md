@@ -16,3 +16,4 @@
 ## Backend Model
 
 The backend model should follow the MVC (Model View Controller) design philosophy.
+- [Here](https://medium.com/javascript-in-plain-english/full-stack-mongodb-react-node-js-express-js-in-one-simple-app-6cc8ed6de274) is a really neat Medium article about creating a MERN stack applicaton.
