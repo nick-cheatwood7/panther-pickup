@@ -1,4 +1,4 @@
-Contains Drinks, this is similar to entrees
+Contains Drinks, this is similar to entrees.... except they are drinks!
 # Drinks
 
 - id
