@@ -47,7 +47,7 @@ class Order {
     return this._timeCreated
   }
 
-  set this.timeScheduled(value) {
+  set timeScheduled(value) {
     this._timeScheduled = value
     return this._timeScheduled
   }
