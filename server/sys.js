@@ -2,8 +2,8 @@
 
 export default {
   sessionSecret: '',
-  dataApiUrl: 'mongodb+srv://ncheatw:<password>@cluster0.zvog0.mongodb.net/<dbname>?retryWrites=true&w=majority',
-  dbUsername: 'ncheatw',
-  dbPassword: 'pfz8EER5tdtHCa2a',
+  apiUrl: 'mongodb+srv://WebUser:ffIO1wuc1xbHfzjz@cluster0.zvog0.mongodb.net/PantherPickup?retryWrites=true&w=majority',
+  dbUsername: 'WebUser',
+  dbPassword: 'ffIO1wuc1xbHfzjz',
   tokenSalt: '',
 }

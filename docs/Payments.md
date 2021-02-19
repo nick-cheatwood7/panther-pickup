@@ -1,5 +1,5 @@
 # Payments
 
 - id
-- cardNumber
+- studentId
 - paymentAmount

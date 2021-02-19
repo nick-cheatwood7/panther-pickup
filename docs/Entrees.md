@@ -4,6 +4,5 @@ An entree is a single food item (slice of pizza, southwest salad, cheeseburger, 
 ## Data
 - id
 - name
-- pricePerUnit
 - description
 - tags

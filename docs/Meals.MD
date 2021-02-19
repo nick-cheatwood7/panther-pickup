@@ -1,6 +1,5 @@
 
 # Meals
-- id
-- name
-- pricePerUnit
-- entreeIds
+- id: String
+- name: String
+- entrees: [String]

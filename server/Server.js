@@ -2,12 +2,12 @@ import express from 'express'
 import createError from 'http-errors'
 import path from 'path'
 import bodyParser from 'body-parser'
-import fileUpload from 'express-fileupload'
 import cookieParser from 'cookie-parser'
 import session from 'express-session'
 import sys from './sys.js'
+import Entree from './db/Entree/Entree.js'
 
-import apiRouter from './routes/apiRouter.js'
+// import apiRouter from './routes/apiRouter.js'
 
 let instance = null
 
@@ -29,12 +29,11 @@ class Server {
     this.app.use(cookieParser())
     this.app.use(express.static(path.join(process.cwd(), '/build')))
     this.app.use(bodyParser.json())
-    this.app.use(fileUpload())
-    this.app.use(session({
-      secret: sys.sessionSecret,
-      resave: true,
-      saveUninitialized: true
-    }))
+    // this.app.use(session({
+    //   secret: sys.sessionSecret,
+    //   resave: true,
+    //   saveUninitialized: true
+    // }))
   }
 
   setupAppErrors = () => {
@@ -52,8 +51,19 @@ class Server {
   }
 
   setupAppRoutes = () => {
-    this.app.use('/api', apiRouter)
+    // this.app.use('/api', apiRouter)
     this.app.use('/', (request, response, next) => {
+
+      try {
+        const entree = new Entree()
+        //entree.getAllEntreeCollection()
+        entree.test()
+        entree.saveEntree()
+      } catch (err) {
+        console.log(err)
+      }
+
+
       response.sendFile(path.join(process.cwd(), './build/index.html'))
     })
   }
