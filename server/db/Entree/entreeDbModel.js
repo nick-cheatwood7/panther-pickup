@@ -20,12 +20,14 @@ const EntreeSchema = new mongoose.Schema({
   tags: {
     type: [String],
     required: true
-  }
-})
+  },
+}, { collection: 'Entree'})
 
 const EntreeDbModel = mongoose.model('Entree', EntreeSchema)
 
 export default EntreeDbModel
+
+// specify 'collection' in 'mongoose.Schema' object : https://stackoverflow.com/questions/5794834/how-to-access-a-preexisting-collection-with-mongoose
 
 
 // import * as mongoose from 'mongoose'

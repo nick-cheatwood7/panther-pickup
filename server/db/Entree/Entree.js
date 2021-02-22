@@ -27,8 +27,9 @@ class Entree extends Db {
 
     try {
         this.open()
-        const entree = new EntreeDbModel({ name: 'Test', description: 'Blah', tags: ['Tag1', 'Tag2'] })
-        const entreeSaveRequest = await EntreeDbModel.save()
+        const entree = new EntreeDbModel({ name: 'Testing DB Connection', description: 'This is Nick again:)', tags: ['Tag1', 'Tag2', 'Tag 3', 'Tag 4'] })
+        // const entreeSaveRequest = await EntreeDbModel.save()
+        const entreeSaveRequest = await entree.save()
         console.log(entreeSaveRequest)
     } catch (err) {
         console.log(err)
