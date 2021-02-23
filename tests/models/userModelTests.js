@@ -7,7 +7,8 @@ const getUserProperties = () => {
       email: "acme@mail.com",
       phone: '1231234',
       authToken: 0,
-      privilegeSet: 'standard'
+      privilegeSet: 'standard',
+      studentId: 123456
   }
 
   const expectedOutput = {
@@ -15,7 +16,8 @@ const getUserProperties = () => {
     email: "acme@mail.com",
     phone: '1231234',
     authToken: 0,
-    privilegeSet: 'standard'
+    privilegeSet: 'standard',
+    studentId: 123456
   }
 
   const user = new User(input)
@@ -31,7 +33,8 @@ const setUserProperties = () => {
       email: 'myemail@email.com',
       phone: '1234567890',
       authToken: 420,
-      privilegeSet: 'standard'
+      privilegeSet: 'standard',
+      studentId: 123456
   }
 
   const modifiedData = {
@@ -39,7 +42,8 @@ const setUserProperties = () => {
     email: 'mysecondemail@email.com',
     phone: '1234567890',
     authToken: 42069,
-    privilegeSet: 'advanced'
+    privilegeSet: 'advanced',
+    studentId: 123456
   }
 
   const user = new User(input)

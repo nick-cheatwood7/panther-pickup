@@ -6,6 +6,7 @@ class User {
     this.phone = props.phone
     this.authToken = props.authToken
     this.privilegeSet = props.privilegeSet
+    this.studentId = props.studentId
   }
 
   get id() {
@@ -26,6 +27,10 @@ class User {
 
   get privilegeSet() {
     return this._privilegeSet
+  }
+
+  get studentId() {
+    return this._studentId
   }
 
   set id(value){
@@ -53,13 +58,19 @@ class User {
       return this.privilegeSet
   }
 
+  set studentId(value) {
+    this._studentId = value
+    return this.studentId
+  }
+
   get props() {
     return {
       id: this.id,
       email: this.email,
       phone: this.phone,
       authToken: this.authToken,
-      privilegeSet: this.privilegeSet
+      privilegeSet: this.privilegeSet,
+      studentId: this.studentId
     }
   }
 

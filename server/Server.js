@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser'
 import session from 'express-session'
 import sys from './sys.js'
 import Entree from './db/Entree/Entree.js'
+import User from './db/User/User.js'
 
 // import apiRouter from './routes/apiRouter.js'
 
@@ -56,7 +57,6 @@ class Server {
 
       try {
         const entree = new Entree()
-        //entree.getAllEntreeCollection()
         entree.test()
         entree.saveEntree()
       } catch (err) {

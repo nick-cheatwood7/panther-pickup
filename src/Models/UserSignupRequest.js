@@ -4,6 +4,8 @@ class UserSignupRequest {
   this.password = props.password
   this.confirmPassword = props.confirmPassword
   this.phone = props.phone
+  this.studentId = props.studentId
+  this.isPasswordConfirmed = ( this.password === this.confirmPassword ? true : false)
 }
 
   get email() {
@@ -20,6 +22,14 @@ class UserSignupRequest {
 
   get phone() {
       return this._phone
+  }
+
+  get studentId() {
+    return this._studentId
+  }
+
+  get isPasswordConfirmed() {
+    return this._isPasswordConfirmed
   }
 
   set email(value) {
@@ -40,9 +50,9 @@ class UserSignupRequest {
       return this._phone
   }
 
-  get isPasswordConfirmed () {
-    if (this.password === this.confirmPassword) return true
-    else return false
+  set studentId(value) {
+    this._studentId = value
+    return this._studentId
   }
 
   get props() {
@@ -50,7 +60,9 @@ class UserSignupRequest {
       email: this.email,
       phone: this.phone,
       password: this.password,
-      confirmPassword: this.confirmPassword
+      confirmPassword: this.confirmPassword,
+      studentId: this.studentId,
+      isPasswordConfirmed: this.isPasswordConfirmed
     }
   }
 }

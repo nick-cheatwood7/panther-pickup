@@ -10,4 +10,8 @@ No passwords are stiored here, only tokens.
 
 ## Views
 - Sign-up Form
-- Create From [Hidden]
+- Create Form [Hidden]
+
+## Tests
+- [x] Model Tests
+- [x] Controller Tests

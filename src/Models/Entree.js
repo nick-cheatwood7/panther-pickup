@@ -3,6 +3,7 @@ class Entree {
   constructor(props) {
     this.id = props.id
     this.name = props.name
+    this.pricePerUnit = props.pricePerUnit
     this.description = props.description
     this.tags  = props.tags
   }
@@ -13,6 +14,10 @@ class Entree {
 
   get name() {
     return this._name
+  }
+
+  get pricePerUnit() {
+    return this._pricePerUnit
   }
 
   get description() {
@@ -33,6 +38,11 @@ class Entree {
     return this._name
   }
 
+  set pricePerUnit(value) {
+    this._pricePerUnit = value
+    return this._pricePerUnit
+  }
+
   set description(value) {
     this._description = value
     return this._description
@@ -47,6 +57,7 @@ class Entree {
     return {
       id: this.id,
       name: this.name,
+      pricePerUnit: this.pricePerUnit,
       description: this.description,
       tags: this.tags
     }

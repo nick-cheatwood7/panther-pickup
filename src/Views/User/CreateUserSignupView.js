@@ -8,6 +8,7 @@ class CreateUserSignupView extends Component {
     this.phoneInput = React.createRef()
     this.passwordInput = React.createRef()
     this.confirmPasswordInput = React.createRef()
+    this.studentIdInput = React.createRef()
 
     this.controller = new UserController()
   }
@@ -17,7 +18,8 @@ class CreateUserSignupView extends Component {
       email: this.emailInput.current.value,
       phone: this.phoneInput.current.value,
       password: this.passwordInput.current.value,
-      confirmPassword: this.confirmPasswordInput.current.value
+      confirmPassword: this.confirmPasswordInput.current.value,
+      studentId: this.studentIdInput.current.value
     }
 
     const userSignupRequest = this.controller.createNewUserSignupRequest(userProps)
@@ -32,7 +34,10 @@ class CreateUserSignupView extends Component {
         <input id='email' type='email' ref={this.emailInput} />
 
         <label htmlFor='phone'>Phone: </label>
-        <input id='phone' type='phone' ref={this.phoneInput}/>
+        <input id='phone' type='phone' ref={this.phoneInput} />
+
+        <label htmlFor='studentId'>Student ID: </label>
+        <input id='studentId' type='studentId' ref={this.studentIdInput}/>
 
         <label htmlFor='password'>Password: </label>
         <input id='password' type='password' ref={this.passwordInput}/>

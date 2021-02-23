@@ -10,8 +10,14 @@ class UserController {
 
   createNewUserSignupRequest = userProps => {
     const userSignupRequest = new UserSignupRequest(userProps)
-    if (userSignupRequest.isPasswordConfirmed) return userSignupRequest
-    else return false
+    if (userSignupRequest.isPasswordConfirmed) {
+      // save to the User database
+      // const dbUser = new DbUser(userSignupRequest)
+      // console.log(dbUser)
+      return userSignupRequest
+    } else {
+      return false
+    }
   }
 }
 

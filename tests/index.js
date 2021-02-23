@@ -1,6 +1,9 @@
 import entreeModelTests from './models/entreeModelTests.js'
 import userModelTests from './models/userModelTests.js'
 import userControllerTests from './controllers/userControllerTests.js'
+import cartItemTests from './models/cartModelTests.js'
+import cartModelTests from './models/cartModelTests.js'
+import cartControllerTests from './controllers/cartControllerTest.js'
 
 async function runTestsAndReturnFailures(tests) {
   const testTotalCount = tests.length
@@ -28,7 +31,9 @@ async function init(tests) {
 const testsArray = [
   entreeModelTests,
   userModelTests,
-  userControllerTests
+  userControllerTests,
+  cartModelTests,
+  cartControllerTests
 ]
 
 init(testsArray.flat())
