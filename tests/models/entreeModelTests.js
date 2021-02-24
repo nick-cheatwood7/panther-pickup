@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import Entree from '../../src/Models/Entree.js'
+import Entree from '../../src/backend/Models/Entree.js'
 
 const getEntreeProperties = () => {
   const input = {

@@ -17,8 +17,11 @@ const UserSchema = new mongoose.Schema({
   studentId: {
     type: Number,
     required: true
+  }, id: {
+    type: String,
+    required: true
   }
-}, { collection: 'User'})
+}, { collection: 'User' })
 
 const UserDbModel = mongoose.model('User', UserSchema)
 

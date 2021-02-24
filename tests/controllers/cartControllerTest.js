@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import CartController from '../../src/Controllers/CartController.js'
+import CartController from '../../src/backend/Controllers/CartController.js'
 
 const createNewCartFromControllerTests = () => {
   const controller = new CartController()

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserController from '../../Controllers/UserController'
+import UserController from '../../../backend/Controllers/UserController'
 
 class CreateUserView extends Component {
   constructor () {
@@ -26,6 +26,8 @@ class CreateUserView extends Component {
   render () {
     return (
       <div className='CreateUserView'>
+
+        <h1>Create User Form</h1>
 
         <label htmlFor='email'>Email: </label>
         <input id='email' type='email' ref={this.emailInput} />

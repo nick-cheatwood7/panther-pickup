@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import Cart from '../../src/Models/Cart.js'
+import Cart from '../../src/backend/Models/Cart.js'
 
 const getCartProperties = () => {
   const input = {

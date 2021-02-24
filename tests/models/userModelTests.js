@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import User from '../../src/Models/User.js'
+import User from '../../src/backend/Models/User.js'
 
 const getUserProperties = () => {
   const input = {

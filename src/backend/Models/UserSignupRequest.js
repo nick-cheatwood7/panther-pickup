@@ -5,7 +5,7 @@ class UserSignupRequest {
   this.confirmPassword = props.confirmPassword
   this.phone = props.phone
   this.studentId = props.studentId
-  this.isPasswordConfirmed = ( this.password === this.confirmPassword ? true : false)
+  this.privilegeSet = props.privilegeSet
 }
 
   get email() {
@@ -28,8 +28,8 @@ class UserSignupRequest {
     return this._studentId
   }
 
-  get isPasswordConfirmed() {
-    return this._isPasswordConfirmed
+  get privilegeSet() {
+    return this._privilegeSet
   }
 
   set email(value) {
@@ -55,6 +55,11 @@ class UserSignupRequest {
     return this._studentId
   }
 
+  set privilegeSet(value) {
+    this._privilegeSet = value
+    return this._privilegeSet
+  }
+
   get props() {
     return {
       email: this.email,
@@ -62,7 +67,8 @@ class UserSignupRequest {
       password: this.password,
       confirmPassword: this.confirmPassword,
       studentId: this.studentId,
-      isPasswordConfirmed: this.isPasswordConfirmed
+      privilegeSet: this.privilegeSet,
+      isPasswordsMatch: this.password === this.confirmPassword ? true : false
     }
   }
 }

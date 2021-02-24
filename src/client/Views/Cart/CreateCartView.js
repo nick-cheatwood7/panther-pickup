@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CartController from '../../Controllers/CartController'
+import CartController from '../../../backend/Controllers/CartController.js'
 
 class CreateCartView extends Component {
   constructor () {
@@ -27,6 +27,8 @@ class CreateCartView extends Component {
   render () {
     return (
       <div className='CreateCartView'>
+
+        <h1>Cart Form</h1>
 
         <label htmlFor='userId'>User ID: </label>
         <input id='userId' type='text' ref={this.userIdInput} />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserController from '../../Controllers/UserController'
+import UserController from '../../../backend/Controllers/UserController.js'
 
 class CreateUserSignupView extends Component {
   constructor () {
@@ -9,7 +9,6 @@ class CreateUserSignupView extends Component {
     this.passwordInput = React.createRef()
     this.confirmPasswordInput = React.createRef()
     this.studentIdInput = React.createRef()
-
     this.controller = new UserController()
   }
 
@@ -19,16 +18,19 @@ class CreateUserSignupView extends Component {
       phone: this.phoneInput.current.value,
       password: this.passwordInput.current.value,
       confirmPassword: this.confirmPasswordInput.current.value,
-      studentId: this.studentIdInput.current.value
+      studentId: this.studentIdInput.current.value,
+      privilegeSet: 'Standard'
     }
 
     const userSignupRequest = this.controller.createNewUserSignupRequest(userProps)
-    console.log(userSignupRequest)
+    // console.log(userSignupRequest)
   }
 
   render () {
     return (
       <div className='CreateUserSignupView'>
+
+        <h1>User Signup Form</h1>
 
         <label htmlFor='email'>Email: </label>
         <input id='email' type='email' ref={this.emailInput} />

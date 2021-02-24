@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import UserController from '../../src/Controllers/UserController.js'
+import UserController from '../../src/backend/Controllers/UserController.js'
 import uuid from 'uuid'
 
 const createNewUserFromControllerTest = () => {

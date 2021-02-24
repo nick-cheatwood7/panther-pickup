@@ -26,6 +26,9 @@ const propsValidity = props => {
   if (!props.email) err.error.messages.push('No email on creation of User')
   if (!props.privilegeSet) err.error.messages.push('No privilegeSet on creation of User')
 
+  // check for matching passwords
+  if (props.password !== props.confirmPassword) err.error.messages.push('Passwords do not match')
+
 
   if (err.error.messages.length <= 0) {
     return { status: 'OK' }

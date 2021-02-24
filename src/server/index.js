@@ -13,12 +13,12 @@ const main = () => {
   // create a new Entree
   const entree = new Entree()
   entree.test()
-  entree.saveEntree()
+  // entree.saveEntree()
 
   // create a new User
   const user = new User()
   user.test()
-  user.saveUser()
+  // user.saveUser()
 
   webService.listen(port, () => {
     console.log(`Server is listening on ${port}`)
