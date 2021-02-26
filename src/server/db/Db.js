@@ -8,7 +8,7 @@ class Db {
     }
 
     close = () => {
-
+        return
     }
 
 }

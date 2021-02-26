@@ -4,25 +4,26 @@ import mongoose from 'mongoose'
 const UserSchema = new mongoose.Schema({
   email: {
     type: String,
-    required: true
+    required: true,
   },
   phone: {
     type: String,
-    required: false
+    required: false,
   },
   privilegeSet: {
     type: [String],
-    required: true
+    required: true,
   },
   studentId: {
     type: Number,
-    required: true
-  }, id: {
-    type: String,
-    required: true
-  }
+    required: true,
+  },
 }, { collection: 'User' })
 
+// const emptySchema = new mongoose.Schema({}, { strict: false})
+
 const UserDbModel = mongoose.model('User', UserSchema)
+
+// module.exports = mongoose.model('User', UserSchema)
 
 export default UserDbModel

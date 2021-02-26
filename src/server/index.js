@@ -1,9 +1,12 @@
 import http from 'http'
 import SYS from './sys.js'
 import Server from './Server.js'
-// import DB from '../db/DB.js'
 import Entree from './db/Entree/Entree.js'
 import User from './db/User/User.js'
+
+import express from 'express'
+const app = express()
+const router = express.Router()
 
 const main = () => {
 
@@ -16,13 +19,22 @@ const main = () => {
   // entree.saveEntree()
 
   // create a new User
-  const user = new User()
-  user.test()
-  // user.saveUser()
+  // const user = new User()
+  // user.getAllUsers()
+  // user.createUser()
 
   webService.listen(port, () => {
     console.log(`Server is listening on ${port}`)
   })
+
+  initRoutes()
+}
+
+const initRoutes = () => {
+  console.log('Initializing routes...')
+  // User routes
+  const user = new User()
+  app.get('/users', user.getAllUsers)
 }
 
 const createServer = () => {
@@ -40,4 +52,8 @@ const normalizePort = portString => {
 
 main()
 
-export { main, createServer, normalizePort }
+export { main, createServer, normalizePort, initRoutes }
+
+
+
+
