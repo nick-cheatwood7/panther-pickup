@@ -5,6 +5,14 @@ import React, { Component } from 'react'
 import EntreeListItem from './EntreeListItem'
 import entreeData from '../../../server/db/Entree/data/entreeData.json'
 
+// props = {
+//   key: 123,
+//   data: {
+//     name:
+//     description
+//   }
+// }
+
 export class EntreeList extends Component {
 
   entreesToRender = entreeData

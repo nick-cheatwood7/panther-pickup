@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-function EntreeCard(props) {
+const EntreeCard = (props) => {
   return (
     <div className="card">
       <h1>{props.name}</h1>
