@@ -51,6 +51,6 @@ const setCartItemProperties = () => {
 export default [
   { name: 'Model | Get CartItem Properties', test: getCartItemProperties },
   { name: 'Model | Set CartItem Properties', test: setCartItemProperties },
-] { name: 'Model | Get Cart Properties', test: getCartProperties },
+  { name: 'Model | Get Cart Properties', test: getCartProperties },
   { name: 'Model | Set Cart Properties', test: setCartProperties },
 ]
