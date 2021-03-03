@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 
 import EntreeListItem from './EntreeListItem'
-import entreeData from '../../../server/db/Entree/data/entreeData.json'
+import entreeData from './data/entreeData.json'
 
 // props = {
 //   key: 123,
