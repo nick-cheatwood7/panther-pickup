@@ -1,5 +1,0 @@
-# Payments
-
-- id
-- studentId
-- paymentAmount
