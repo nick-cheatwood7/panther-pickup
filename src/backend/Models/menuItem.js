@@ -1,14 +1,14 @@
-class Entree {
+class MenuItem {
     constructor(props) {
       this.id = props.id
       this.name = props.name
       this.description = props.description
     }
-  
+
     get id() {
       return this._id
     }
-  
+
     get name() {
       return this._name
     }
@@ -19,7 +19,7 @@ class Entree {
         this._id = value
         return this._id
     }
-    
+
       set name(value) {
         this._name = value
         return this._name
@@ -35,7 +35,7 @@ class Entree {
           description: this.description,
         }
       }
-    
+
 }
-    
-export default Entree
+
+export default MenuItem
